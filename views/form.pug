@@ -1,0 +1,8 @@
+body
+  form(action='/new', method='POST')
+    p
+      | user: 
+      input(type='text', name='messageUser', value='')
+      |          text: 
+      input(type='text', name='messageText', value='')
+    input(type='submit', value='Submit')

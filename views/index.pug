@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul
+  for item in messages
+    h4= item.user 
+    li= item.text 
+    br
+  a(href="http://localhost:3000/new") new message
